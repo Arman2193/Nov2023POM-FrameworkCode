@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test parallel="tests" name="Login Page Test(failed)">
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="loginPageTitleTest"/>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="loginPageURLTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
+  <test parallel="tests" name="Accounts Page Test(failed)">
+    <classes>
+      <class name="com.qa.opencart.tests.AccountsPageTest">
+        <methods>
+          <include name="searchProductTest"/>
+          <include name="searchProductCountTest"/>
+          <include name="accPageTitleTest"/>
+          <include name="accPageHeadersValueTest"/>
+          <include name="accPageSetup"/>
+          <include name="accPageHeadersCountTest"/>
+          <include name="setup"/>
+          <include name="accPageURLTest"/>
+          <include name="isLogoutLinkExistTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
+    </classes>
+  </test> <!-- Accounts Page Test(failed) -->
+</suite> <!-- Failed suite [Opencart App Test Regression Suite] -->

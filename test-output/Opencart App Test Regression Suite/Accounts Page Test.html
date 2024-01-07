@@ -1,0 +1,1601 @@
+<html>
+<head>
+<title>TestNG:  Accounts Page Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Accounts Page Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 07 02:22:20 PST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21813 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.setup()'><b>setup</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1353572389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1353572389'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>11</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageSetup()'><b>accPageSetup</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.teardown()'><b>teardown</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageHeadersCountTest()'><b>accPageHeadersCountTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1887418850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1887418850'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageHeadersValueTest()'><b>accPageHeadersValueTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace201011198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201011198'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageTitleTest()'><b>accPageTitleTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace593907388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace593907388'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageURLTest()'><b>accPageURLTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1976912784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1976912784'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.isLogoutLinkExistTest()'><b>isLogoutLinkExistTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace283709595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace283709595'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductCountTest()'><b>searchProductCountTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1325379213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1325379213'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductCountTest()'><b>searchProductCountTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace869370394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace869370394'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductCountTest()'><b>searchProductCountTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace896476364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace896476364'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductCountTest()'><b>searchProductCountTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace2030137497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2030137497'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductCountTest()'><b>searchProductCountTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace382681438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace382681438'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductTest()'><b>searchProductTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1706995828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1706995828'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductTest()'><b>searchProductTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace695509869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace695509869'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductTest()'><b>searchProductTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1730027112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730027112'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductTest()'><b>searchProductTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1081252881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1081252881'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductTest()'><b>searchProductTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace968491894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace968491894'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchProductTest()'><b>searchProductTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace681679988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace681679988'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:60)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:145)
+	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:302)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+	... 26 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@7cf78c85</td></tr>
+</table><p>
+</body>
+</html>

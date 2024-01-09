@@ -75,7 +75,7 @@ public class DriverFactory {
 			tlDriver.set(new EdgeDriver());
 		} else {
 
-			System.out.println(" plz pass the right browser... " + browserName);
+			System.out.println(" plz pass the correct browser... " + browserName);
 		}
 
 		getDriver().manage().deleteAllCookies();
